@@ -1,0 +1,35 @@
+{
+    "project_name": "SmartText AI",
+    "dataset": "WikiText-2",
+    "vocabulary_size": 8000,
+    "sequence_length": 20,
+    "padding_id": 0,
+    "unknown_id": 1,
+    "embedding_dimension": 48,
+    "hidden_units": 64,
+    "dropout": 0.2,
+    "maximum_epochs": 10,
+    "default_model": "N-gram",
+    "models": [
+        "N-gram",
+        "LSTM",
+        "GRU"
+    ],
+    "model_performance": {
+        "N-gram": {
+            "top_1_accuracy": 20.09,
+            "top_5_accuracy": 36.55,
+            "test_loss": null
+        },
+        "LSTM": {
+            "top_1_accuracy": 15.870000000000001,
+            "top_5_accuracy": 29.830000000000002,
+            "test_loss": 6.023894309997559
+        },
+        "GRU": {
+            "top_1_accuracy": 16.79,
+            "top_5_accuracy": 31.19,
+            "test_loss": 5.929808139801025
+        }
+    }
+}
